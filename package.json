@@ -1,0 +1,12 @@
+{
+  "name": "browserstack-ui",
+  "version": "1.0.0",
+  "author": "afficiona",
+  "main": "components/index.js",
+  "dependencies": {
+    "react": "16.11.0",
+    "prop-types": "15.7.2",
+    "node-sass": "4.13.0",
+    "styled-components": "4.4.1"
+  }
+}
