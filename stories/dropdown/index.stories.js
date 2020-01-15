@@ -2,10 +2,12 @@ import React from 'react';
 import { withKnobs, text, radios, boolean, object } from "@storybook/addon-knobs";
 import { storiesOf } from '@storybook/react';
 
-import SimpleDropdown from './simple';
+import ConfigurableDropdown from './configurable';
+import ContentAlignments from './alignments';
 
 const stories = storiesOf('Dropdown', module)
-  .add('Simple', SimpleDropdown)
+  .add('Configurable', ConfigurableDropdown)
+  .add('Alignments', ContentAlignments)
   ;
 
 stories.addDecorator(withKnobs);

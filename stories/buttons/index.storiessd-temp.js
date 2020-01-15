@@ -19,19 +19,11 @@ const sizeOptions = {
 
 const stories = storiesOf('Button', module)
   .add('Configurations', () => {
-    const themeOptions = {
-      colorScheme: {
-        primary: text('Primary', 'blue', 'Config Theme'),
-        warning: text('Warning', 'orange', 'Config Theme'),
-        danger: text('Danger', 'red', 'Config Theme'),
-        success: text('Success', 'green', 'Config Theme')
-      }
-    };
     const colorScheme = radios('Theme', colorOptions, colorOptions.Primary, 'Color');
     const size = radios('Size', sizeOptions, sizeOptions.Default, 'Size');
     const outline = boolean('Outline', false, 'Outline');
     return (
-      <ThemeProvider theme={themeOptions}>
+      <ThemeProvider theme={{}}>
         <Button
           bgDanger
           lg={size === 'lg'}
