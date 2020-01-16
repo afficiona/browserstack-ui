@@ -22,8 +22,10 @@ const ConfigDropdown = () => {
   const isOpen = boolean('Is Dropdown Open', false, KnobsID);
   const toShowCustomHeader = boolean('Show Custom Header', false, KnobsID);
   const title = text('Title', 'Click Me', KnobsID);
+  const isPrimary = boolean('Is Primary', true, KnobsID);
   const toShowNotch = boolean('Show Notch', true, KnobsID);
   const toShowArrow = boolean('Show Arrow', true, KnobsID);
+  const isCompact = boolean('Is Compact', true, KnobsID);
   const alignment = radios('Dropdown Alignment', alignmentOptions, alignmentOptions.Center, KnobsID);
   const isTitleUppercase = boolean('Is Title uppercase', true, KnobsID);
   const iconValue = select('Select Icon for Header', iconOptions, iconOptions.Filters, KnobsID);
@@ -39,8 +41,10 @@ const ConfigDropdown = () => {
         isOpen={isOpen}
         title={title}
         align={alignment}
+        primary={isPrimary}
         showNotch={toShowNotch}
         icon={iconValue}
+        compact={isCompact}
         onToggleDropdown={() => this.toggleResultDropdown()}
       >
         <div class="feedback-form">
