@@ -7,7 +7,7 @@ import ContentAlignments from './alignments';
 
 const stories = storiesOf('Dropdown', module)
   .add('Configurable', ConfigurableDropdown)
-  .add('Alignments', ContentAlignments)
+  // .add('Alignments', ContentAlignments)
   ;
 
 stories.addDecorator(withKnobs);
